@@ -3,6 +3,7 @@ import cv2
 from facefilters.utils import sobelx, sobely, laplacian, canny
 
 
+
 def edge_detect(image_path, algorithm="canny", show=True):
 	image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 	if algorithm=="sobelx":
